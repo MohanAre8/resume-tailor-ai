@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AI-Powered Resume Builder & Tailor
 
-## Getting Started
+A sophisticated multi-agent system built with **Next.js**, **LangGraph**, and **Groq** to intelligently tailor resumes for specific job descriptions.
 
-First, run the development server:
+## 🌟 Features
+- **Researcher Agent**: Uses **Tavily Web Search** to find implicit company requirements and real-world tech stack insights.
+- **Tailor Agent**: Rewrites resume bullets using high-impact [Action Verb] + [How/Tech] + [Metric] structure.
+- **Conciseness Agent**: Optimizes resume length to 1-2 pages while preserving all critical sections.
+- **ATS Critic**: Evaluates and scores your resume based on recruiter standards (aiming for 90+ score).
+- **Google Drive Integration**: Select base resumes directly from Drive and save tailored results automatically.
+- **Job Tracker**: Automatically logs application details into a Google Tracking Sheet.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+- **Framework**: Next.js 16 (App Router)
+- **AI Orchestration**: LangGraph.js & LangChain
+- **Models**: Groq (Llama 3.3 70B & 3.1 8B)
+- **Search**: Tavily Search API
+- **Auth & Storage**: Google OAuth, Drive API, & Sheets API
+- **Styling**: Tailwind CSS 4 (Premium Glassmorphic Design)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
+- `src/lib/agents`: The "Brain" (Nodes, Graph, State)
+- `src/lib/llm`: AI model configurations
+- `src/components`: Premium UI components (Google Drive Picker, Result View, Terminal Log)
+- `docs/`: Technical documentation and implementation history
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
+1. **Clone the repo**
+2. **Setup Secrets**: Copy `.env.example` to `.env.local` and add your API keys.
+3. **Install & Run**:
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Documentation
+Comprehensive architecture details and deployment guides can be found in the [docs/](file:///Users/mohanareti/CodeBAse/Agent/resumebuilder/docs) folder.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created with ❤️ for technical excellence in job applications.*
