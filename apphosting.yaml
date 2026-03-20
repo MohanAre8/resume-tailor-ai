@@ -1,0 +1,21 @@
+kind: AppHostingYaml
+version: v1
+runConfig:
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+env:
+  - variable: NEXTAUTH_URL
+    value: https://${PROJECT_ID}.web.app
+  - variable: NEXT_PUBLIC_GOOGLE_CLIENT_ID
+    secret: GOOGLE_CLIENT_ID
+  - variable: GOOGLE_CLIENT_SECRET
+    secret: GOOGLE_CLIENT_SECRET
+  - variable: GOOGLE_API_KEY
+    secret: GOOGLE_API_KEY
+  - variable: NEXTAUTH_SECRET
+    secret: NEXTAUTH_SECRET
+  - variable: GROQ_API_KEY
+    secret: GROQ_API_KEY
+  - variable: TAVILY_API_KEY
+    secret: TAVILY_API_KEY
