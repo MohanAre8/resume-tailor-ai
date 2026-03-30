@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local developer scripts (contains personal test data - DO NOT share publicly)
+/scripts
