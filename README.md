@@ -2,6 +2,9 @@
 
 A sophisticated multi-agent system built with **Next.js**, **LangGraph**, and **Groq** to intelligently tailor resumes for specific job descriptions.
 
+# 🔗 Live Demo: https://resume-track-tailor.vercel.app/
+📄 Architecture Docs: See /docs folder
+
 ## 🌟 Features
 - **Researcher Agent**: Uses **Tavily Web Search** to find implicit company requirements and real-world tech stack insights.
 - **Tailor Agent**: Rewrites resume bullets using high-impact [Action Verb] + [How/Tech] + [Metric] structure.
