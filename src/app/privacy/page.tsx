@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
                         fontSize: '14px',
                         letterSpacing: '0.05em',
                     }}>
-                        ← Back to Resume Tailor AI
+                        ← Back to AI Resume Agent
                     </a>
                     <h1 style={{
                         fontSize: '36px',
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
                 {/* Intro */}
                 <Section>
                     <p style={{ color: '#94a3b8', lineHeight: '1.8', fontSize: '16px' }}>
-                        Resume Tailor AI is built on a simple principle: your data belongs to you, not us.
+                        AI Resume Agent is built on a simple principle: your data belongs to you, not us.
                         This page explains exactly what we collect, what we don't, and how your information is handled.
                     </p>
                 </Section>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
                 {/* What we do */}
                 <Section title="What We Do">
                     <p style={{ color: '#94a3b8', lineHeight: '1.8' }}>
-                        When you use Resume Tailor AI, here is what happens:
+                        When you use AI Resume Agent, here is what happens:
                     </p>
                     <ul style={{ color: '#94a3b8', lineHeight: '2', paddingLeft: '20px', marginTop: '12px' }}>
                         <li>Your resume is temporarily processed in memory to generate a tailored version</li>
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
                 {/* Third party */}
                 <Section title="Third Party Services">
                     <p style={{ color: '#94a3b8', lineHeight: '1.8' }}>
-                        Resume Tailor AI uses the following external services during processing:
+                        AI Resume Agent uses the following external services during processing:
                     </p>
                     <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         {[
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
                     fontSize: '13px',
                     textAlign: 'center',
                 }}>
-                    Resume Tailor AI — Privacy First Workflow
+                    AI Resume Agent — Privacy First Workflow
                 </div>
 
             </div>
