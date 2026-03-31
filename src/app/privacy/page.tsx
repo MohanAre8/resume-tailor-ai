@@ -137,10 +137,16 @@ export default function PrivacyPolicy() {
                 {/* Contact */}
                 <Section title="Contact">
                     <p style={{ color: '#94a3b8', lineHeight: '1.8' }}>
-                        If you have any questions about this privacy policy or how the app works, feel free to reach out at{' '}
-                        <a href="mailto:mohan.areti7@gmail.com" style={{ color: '#4ade80' }}>
-                            mohan.areti7@gmail.com
+                        If you have any questions about this privacy policy or how the app works,{' '}
+                        <a
+                            href="https://github.com/MohanAre8/resume-tailor-ai/issues/new"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: '#4ade80' }}
+                        >
+                            open a GitHub Issue
                         </a>
+                        {' '}and we'll get back to you.
                     </p>
                 </Section>
 

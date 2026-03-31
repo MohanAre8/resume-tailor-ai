@@ -120,6 +120,20 @@ export default function Dashboard() {
           </div>
         </main>
       </div>
+
+      {/* Footer */}
+      <footer style={{
+        textAlign: 'center',
+        padding: '20px',
+        borderTop: '1px solid rgba(255,255,255,0.06)',
+        color: '#334155',
+        fontSize: '13px',
+      }}>
+        Resume Tailor AI &nbsp;·&nbsp;{' '}
+        <a href="/privacy" style={{ color: '#4ade80', textDecoration: 'none' }}>
+          Privacy Policy
+        </a>
+      </footer>
     </div>
   );
 }
