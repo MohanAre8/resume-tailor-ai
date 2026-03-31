@@ -3,6 +3,7 @@ import { appRunner } from "@/lib/agents/graph";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "./../auth/[...nextauth]/route";
 import { getGoogleClients, getDriveFileText, uploadTailoredResume, ensureTrackingSheet, appendToTracker } from "@/lib/google/api";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: NextRequest) {
   const encoder = new TextEncoder();
@@ -20,6 +21,17 @@ export async function POST(req: NextRequest) {
           controller.close();
           return;
         }
+
+        // ── Rate limiting (5 runs per hour per user) ────────────────────
+        const userId = session.user?.email || "anonymous";
+        const rateLimit = checkRateLimit(userId);
+        if (!rateLimit.allowed) {
+          const resetMins = Math.ceil(rateLimit.resetInMs / 60000);
+          sendStatus({ error: `Rate limit reached. You can run ${5} tailoring jobs per hour. Try again in ${resetMins} minute${resetMins !== 1 ? 's' : ''}.` });
+          controller.close();
+          return;
+        }
+        // ───────────────────────────────────────────────────────────────
 
         const body = await req.json();
         const { companyName, jobDescription, baseResumeFileId, trackingSheetId } = body;
