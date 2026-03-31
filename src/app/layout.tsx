@@ -6,7 +6,7 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Resume & Tracking System",
+  title: "AI Resume Agent",
   description: "Privacy-first, multi-agent AI resume tailoring and application tracking directly into your Google Drive and Sheets.",
 };
 

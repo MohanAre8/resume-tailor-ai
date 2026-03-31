@@ -129,7 +129,7 @@ export default function Dashboard() {
         color: '#334155',
         fontSize: '13px',
       }}>
-        Resume Tailor AI &nbsp;·&nbsp;{' '}
+        AI Resume Agent &nbsp;·&nbsp;{' '}
         <a href="/privacy" style={{ color: '#4ade80', textDecoration: 'none' }}>
           Privacy Policy
         </a>
